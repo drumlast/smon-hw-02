@@ -60,9 +60,3 @@
     systemctl restart zabbix-agent.service
     systemctl status zabbix-agent.service
 
-# Задание 3 со звёздочкой*
-
-    Установите Zabbix Agent на Windows (компьютер) и подключите его к серверу Zabbix.
-### В качестве ответа:
-    Приложите в файл README.md скриншот раздела Latest Data, где видно свободное место на диске C:
-![PUSH и Замена origin](img/Screenshot_3.png)
