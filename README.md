@@ -29,7 +29,7 @@
 #### Окно авторизации в админку:
 ![2](img/2.png)
 #### Админка:
-![2](img/3.png)
+![3](img/3.png)
 
 # Задание 2
 
@@ -42,12 +42,22 @@
 5. Проверьте, что в разделе Latest Data начали появляться данные с добавленных агентов.
 ### В качестве ответа:
 1. Приложите в файл README.md скриншот раздела Configuration > Hosts, где видно, что агенты подключены к серверу
+![4](img/4.png)
 2. Приложите в файл README.md скриншот лога zabbix agent, где видно, что он работает с сервером
+![5](img/5.png)
 3. Приложите в файл README.md скриншот раздела Monitoring > Latest data для обоих хостов, где видны поступающие от агентов данные.
+![6-1](img/6-1.png)
+![6-2](img/6-2.png)
 4. Приложите в файл README.md текст использованных команд в GitHub
-#### PUSH и Замена origin
-![PUSH и Замена origin](img/Screenshot_3.png)
-
+    sudo -i
+    apt update
+    wget https://repo.zabbix.com/zabbix/6.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_latest_6.0+ubuntu24.04_all.deb
+    dpkg -i zabbix-release_latest_6.0+ubuntu24.04_all.deb
+    apt update
+    apt install zabbix-agent -y
+    sed -i 's/Server=127.0.0.1/Server=192.168.245.131/g' /etc/zabbix/zabbix_agentd.conf
+    systemctl restart zabbix-agent.service
+    systemctl status zabbix-agent.service
 # Задание 3 со звёздочкой*
 
     Установите Zabbix Agent на Windows (компьютер) и подключите его к серверу Zabbix.
