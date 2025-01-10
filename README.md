@@ -49,6 +49,7 @@
 ![6-1](img/6-1.png)
 ![6-2](img/6-2.png)
 4. Приложите в файл README.md текст использованных команд в GitHub
+#### Команды:
     sudo -i
     apt update
     wget https://repo.zabbix.com/zabbix/6.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_latest_6.0+ubuntu24.04_all.deb
