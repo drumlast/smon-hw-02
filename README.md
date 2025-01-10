@@ -58,6 +58,7 @@
     sed -i 's/Server=127.0.0.1/Server=192.168.245.131/g' /etc/zabbix/zabbix_agentd.conf
     systemctl restart zabbix-agent.service
     systemctl status zabbix-agent.service
+
 # Задание 3 со звёздочкой*
 
     Установите Zabbix Agent на Windows (компьютер) и подключите его к серверу Zabbix.
